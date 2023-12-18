@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" media="all" rel="stylesheet">
+    <title>Mon Site E-commerce</title>
+</head>
+<body>
+    <header4>
+        <div class="logo">
+            <img src="LunettesLogo.png" alt=" Sunglasses shop " width="100" heighet="100">
+        </div>
+        <div class="nomlogo">
+            <h2>Sunglasses Shop</h2>
+        </div>
+        <div class="principale">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                </li>
+                <li class="products-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                    <a href="#">Produits</a>
+                    <ul class="dropdown-list" id="products-dropdown">
+                        <li><a href="ski-glasses.html">Lunettes de ski</a></li>
+                        <li><a href="cycling-glasses.html">Lunettes de cyclisme</a></li>
+                        <li><a href="sun-glasses.html">Lunettes de soleil</a></li>
+                    </ul>
+                </li>               
+                <li>
+                    <a href="panier.html">Panier</a>
+                </li>
+                <li>
+                    <a href="about.html">À propos de nous</a>                
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </header4>
+    <main>
+        <section id="about-us">
+            <h1>Nous contacter</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <span class="red-text">Pour toute demandes d'informations, vous pouvez nous contacter !
+                        </span>
+                    </p>
+                    <p>Vous pouvez nous contacter par mail à l'adresse suivante : sunglasses@lunettes.fr</p><br>
+                    <br>
+                    <h2> QUESTIONS FRÉQUEMMENT POSÉES </h2><br>
+                    <p> <strong>Est-ce que les lunettes sont adaptés à tout type d'évènements ? </strong></p> 
+                    <p>Evidemment, que ce soit pour les soirées entre copains, pour un petit séjour à la montagne ou bien une balade à vélo sous un beau soleil.</p>
+                    <p> <strong> C'est quoi le petit plus qui rend ces lunettes uniques ? </strong></p>
+                    <p> Nos lunettes sont uniques et très tendance, le site propose pleins de coloris différents qui sauront correspondre à tout type de personnalité.</p>
+                    <p> <strong> Quelles-sont les lunettes coup de coeur du site ? </strong></p>
+                    <p> Les lunettes coup de coeur sont les TurboCharge Optics et les Snow Crest Optics. </p><br>    
+                    
+                    <h3>Tu as une question ou tu veux laisser ton avis à propos de notre site ? </h3>
+                    <p>N'hésitez pas à laisser vos commentaires dans l'encadrer ci-dessous. Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont indiqués avec *</p>
+                    <form id="review-form">
+                        <textarea id="review-text" placeholder="Commentaire ou avis *" required></textarea>
+                        <input type="text" id="reviewer-name" placeholder="Nom *" required>
+                        <input type="email" id="reviewer-email" placeholder="E-mail *" required>
+                        <button type="submit">SOUMETTRE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="about-im2">
+            <div class="about-image2">
+                <img src="manequin.png" alt="Image description">
+            </div>
+        </section>
+    </main>
+
+    <div class="product-reviews-section">
+  
+
+    </div>
+    <script>        
+        // Ajoutez ici la fonctionnalité de soumission des avis
+        document.getElementById('review-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Implémentez la logique pour soumettre l'avis
+            alert('Votre avis a été soumis.');
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2023 Lunettes de vitesse. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

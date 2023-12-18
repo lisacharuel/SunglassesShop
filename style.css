@@ -1,0 +1,531 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./icebergs-8430043_1280.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo a{
+    color: #fff;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 100;
+    text-shadow: rgba(7, 28, 72, 0.7);
+}
+
+.logo span{
+    color: rgb(6, 35, 69);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nomlogo{
+    margin-top: -10px;
+    font-size: 20px;
+    color:black;
+    -webkit-text-stroke: 0.1px ;
+}
+
+.products-dropdown {
+    position: relative;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    top: 415%;
+    left: 0;
+    background-color:lavender ;
+    border: 1px solid #333;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.products-dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-list a:last-child {
+    border-bottom: none;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: -50px;
+    color:azure;
+}
+
+
+ul li a{
+    text-decoration: none;
+    background-color:lavender;
+    color:#000;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background:azure;
+    color: #000;
+}
+
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -50%);
+}
+
+.titre h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+.bouton{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+}
+
+.bouton a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.product {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#product-details {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color:#fff;
+    color:#000;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    background-color:#fff; /* Remplacez "yourColor" par le code couleur de votre choix */
+}
+
+
+.ski-glasses-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligner les éléments au début */
+    align-items: flex-start; /* Aligner les éléments en haut */
+    gap: 5px; /* Ajouter un espace entre les éléments */
+}
+
+.nom2{
+    margin-top: 20px;
+    font-size: 30px;
+    color:black;
+    -webkit-text-stroke: 0.1px ;
+}
+
+.product {
+    box-sizing: border-box;
+    width: calc(19% - 10px); /* Ajuster la largeur pour 5 éléments par ligne, soustraire la valeur de 'gap' */
+    margin: 10px; /* Ajuster l'espace autour des éléments si nécessaire */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    /* Autres styles... */
+}
+
+/* Assurez-vous que les images s'adaptent bien à leurs conteneurs */
+.product img {
+    width: 100%; /* Faire en sorte que l'image remplisse la largeur du conteneur */
+    height: auto; /* Maintenir le ratio de l'image */
+    border-radius: 5px; /* Ajouter si vous voulez des coins arrondis pour les images */
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product2 {
+    box-sizing: border-box;
+    width: calc(19% - 10px); /* Ajuster la largeur pour 5 éléments par ligne, soustraire la valeur de 'gap' */
+    margin: 10px; /* Ajuster l'espace autour des éléments si nécessaire */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    /* Autres styles... */
+}
+
+/* Assurez-vous que les images s'adaptent bien à leurs conteneurs */
+.product2 img {
+    width: 100%; /* Faire en sorte que l'image remplisse la largeur du conteneur */
+    height: auto; /* Maintenir le ratio de l'image */
+    border-radius: 5px; /* Ajouter si vous voulez des coins arrondis pour les images */
+}
+
+.product2:hover {
+    transform: scale(1.05);
+}
+
+/* Assurez-vous que les images s'adaptent bien à leurs conteneurs */
+.product3 img {
+    width: 100%; /* Faire en sorte que l'image remplisse la largeur du conteneur */
+    height: auto; /* Maintenir le ratio de l'image */
+    border-radius: 5px; /* Ajouter si vous voulez des coins arrondis pour les images */
+}
+
+.product3 {
+    box-sizing: border-box;
+    width: calc(19% - 10px); /* Ajuster la largeur pour 5 éléments par ligne, soustraire la valeur de 'gap' */
+    margin: 10px; /* Ajuster l'espace autour des éléments si nécessaire */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    /* Autres styles... */
+}
+
+.product3:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustements pour les résolutions d'écran plus petites */
+@media (max-width: 1200px) {
+    .product {
+        width: calc(25% - 10px); /* 4 éléments par ligne pour les écrans plus petits */
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 10px); /* 2 éléments par ligne pour les écrans très petits */
+    }
+}
+
+.product-details-section {
+    max-width: 1200px; /* Limite la largeur maximale de la section */
+    margin: auto; /* Centre la section */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Organise le contenu en colonne */
+    align-items: center; /* Centre les éléments */
+}
+
+#product-details {
+    display: flex;
+    align-items: flex-start; /* Alignement des éléments en haut */
+    justify-content: center; /* Centre les éléments horizontalement */
+    width: 100%; /* Utilise toute la largeur disponible */
+    max-width: 1200px; /* Limite la largeur maximale pour les grandes résolutions */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ajoute une ombre pour un effet de profondeur */
+    margin-top: 20px; /* Espacement au-dessus de la section des détails */
+    background: #fff; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+#product-image {
+    width: 50%; /* Largeur de l'image */
+    max-width: 300px; /* Largeur maximale de l'image pour éviter qu'elle soit trop grande */
+    object-fit: contain; /* Assure que l'image est entièrement visible */
+    border-top-left-radius: 10px; /* Arrondit le coin supérieur gauche */
+    border-bottom-left-radius: 10px; /* Arrondit le coin inférieur gauche */
+}
+
+#product-details > * {
+    padding: 20px; /* Applique un padding aux éléments enfants */
+}
+
+#product-name {
+    font-size: 1.5rem; /* Taille de la police pour le nom du produit */
+    color: #333; /* Couleur de la police */
+}
+
+#product-description {
+    font-size: 1rem; /* Taille de la police pour la description */
+    color: #666; /* Couleur de la police */
+}
+
+#product-price {
+    font-size: 1.2rem; /* Taille de la police pour le prix */
+    color: #333; /* Couleur de la police */
+    font-weight: bold; /* Met en gras */
+}
+
+/* Style pour le bouton 'Ajouter au Panier' */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px; /* Espacement au-dessus du bouton */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Ajustements pour les résolutions d'écran plus petites */
+@media (max-width: 768px) {
+    #product-details {
+        flex-direction: column; /* Organise les éléments en colonne sur les petits écrans */
+    }
+
+    #product-image {
+        width: 100%; /* L'image utilise toute la largeur disponible */
+        max-height: 500px; /* Hauteur maximale de l'image */
+        border-radius: 10px 10px 0 0; /* Arrondit les coins supérieurs */
+    }
+
+    #product-details > * {
+        padding: 10px; /* Réduit le padding sur les petits écrans */
+    }
+}
+
+
+.product-info {
+    display: flex;
+    flex-direction: column; /* Mettre en colonne les éléments enfants */
+    align-items: flex-start; /* Aligner les éléments enfants à gauche */
+}
+
+.product-info h3,
+.product-info button {
+    margin-bottom: 10px; /* Ajouter de la marge en bas de chaque élément */
+}
+
+.product-info p {
+    margin-bottom: 20px; /* Ajouter de la marge en bas de chaque élément */
+}
+
+#add-to-cart-btn {
+    margin-top: 10px; /* Ajouter une marge en haut pour séparer du prix */
+}
+
+.product-reviews-section {
+    /* Styles pour la section des avis */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les éléments à gauche */
+    text-align: left; /* Aligner le texte à gauche */
+    width: 80%; /* Largeur du formulaire */
+    margin: 0 auto; /* Centrer horizontalement le formulaire */
+}
+
+/* Styles pour les étiquettes (labels) */
+#review-form label {
+    font-size: 14px; /* Réduire la taille de la police */
+    margin-bottom: 5px; /* Ajouter un espacement sous les étiquettes */
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+/* Styles pour les champs de formulaire */
+#review-form input[type="text"],
+#review-form input[type="email"],
+#review-form textarea {
+    margin: 5px 0; /* Réduire la marge autour des champs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Utiliser toute la largeur disponible */
+}
+
+/* Styles pour le bouton "Soumettre" */
+#review-form button {
+    padding: 10px 15px; /* Réduire la largeur du bouton */
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Laisser la largeur s'ajuster au contenu */
+}
+
+#review-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Contenu principal */
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les éléments à gauche */
+    text-align: left; /* Aligner le texte à gauche */
+    width:fit-content; /* Largeur du formulaire */
+    margin: 0 auto; /* Centrer horizontalement le formulaire */
+    margin-left: 0; /* Aligner le formulaire à gauche */
+    }
+
+#about-us {
+    max-width: 800px; /* Largeur maximale de l'encadré */
+    margin: 0 auto; /* Centrer l'encadré horizontalement */
+    padding: 20px; /* Espace intérieur autour du texte */
+    border: 1px solid #ccc; /* Bordure autour de l'encadré */
+    background-color:#fff; /* Couleur de fond */
+    margin-top: 20px;
+    margin: 0 auto; /* Centrer horizontalement le formulaire */
+    margin-left: 0; /* Aligner le formulaire à gauche */
+}
+
+
+#about-us h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.red-text {
+    color:darkred;
+}
+
+
+#about-im {
+    float: right; /* Aligner l'image à droite */
+    width: 50%; /* Adjust the value as needed */
+    height: auto; /* Adjust the value as needed */
+    margin-top: -620px; /* Marge supérieure pour l'image */
+    margin-left: -50px; /* Ajouter une marge à gauche pour l'espace */
+    margin-right: -100px;;
+}
+
+#about-im2 {
+    float: right; /* Aligner l'image à droite */
+    width: 50%; /* Adjust the value as needed */
+    height: auto; /* Adjust the value as needed */
+    margin-top: -870px; /* Marge supérieure pour l'image */
+    margin-left: -50px; /* Ajouter une marge à gauche pour l'espace */
+    margin-right: -100px;;
+}
+
+#about-im3 {
+    float: right; /* Aligner l'image à droite */
+    width: 50%; /* Adjust the value as needed */
+    height: auto; /* Adjust the value as needed */
+    margin-top: -780px; /* Marge supérieure pour l'image */
+    margin-left: -50px; /* Ajouter une marge à gauche pour l'espace */
+    margin-right: -100px;;
+}
+
+.dropdown:hover > #cart-dropdown{
+    display: block;
+}
+
+#descrip h2,
+#descrip p {
+    margin-top: 50px !important;
+    font-size: 30px;
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    color: black;
+    -webkit-text-stroke: 0.5px;
+}
+
+
+
+

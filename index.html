@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" media="all" rel="stylesheet">
+    <title>Mon Site E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <div class="principale">
+            <div class="logo">
+                <img src="LunettesLogo.png" alt=" Sunglasses shop " width="100" heighet="100">
+            </div>
+            <div class="nomlogo">
+                <h2>Sunglasses Shop</h2>
+            </div>                
+            
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                </li>
+                <li class="products-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                    <a href="#">Produits</a>
+                    <ul class="dropdown-list" id="products-dropdown">
+                        <li><a href="ski-glasses.html">Lunettes de ski</a></li>
+                        <li><a href="cycling-glasses.html">Lunettes de cyclisme</a></li>
+                        <li><a href="sun-glasses.html">Lunettes de soleil</a></li>
+                    </ul>
+                </li>               
+                <li>
+                    <a href="panier.html">Panier</a>
+                        
+                </li>
+                <li>
+                    <a href="about.html">À propos de nous</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+            <div class="titre">
+                <h1>TOUTES NOS LUNETTES DE VITESSE</h1>
+            </div>
+            <div class="bouton">
+                <a href="collection.html" class"btn">COLLECTIONS</a>
+                <a href="accessoire.html" class"btn">ACCESSOIRES</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+            <h2>Notre sélection de lunettes de vitesses</h2><br>
+        <div class="ski-glasses-section">
+            <div class="product3" onclick="showProductDetails('ski-glasses-7', 'Snow Crest Optics', 'Les Snow Crest Optics sont des lunettes de ski conçues pour les skieurs expérimentés. Leur design moderne offre une protection optimale contre le vent et la neige, tandis que leurs verres de qualité améliorent la visibilité dans toutes les conditions.', 'ski14.jpeg', '$49.99')">
+                <img src="ski14.jpeg" alt="Snow Crest Optics" width="200" height="150">
+                <h3>Snow Crest Optics</h3>
+                <p>Prix : $49.99</p>
+            </div>
+            <div class="product3" onclick="showProductDetails('ski-glasses-11', 'TurboCharge Optics', 'Les TurboCharge Optics sont des lunettes de cyclisme haut de gamme conçues pour les cyclistes à la recherche d\'une visibilité exceptionnelle. Leurs verres de qualité supérieure offrent une protection maximale contre le vent et les débris.', 'cyc11.jpeg', '$39.99')">
+                <img src="cyc11.jpeg" alt="TurboCharge Optics" width="200" height="150">
+                <h3>TurboCharge Optics</h3>
+                <p>Prix : $39.99</p>
+            </div>
+            <div class="product2" onclick="showProductDetails('ski-glasses-9', 'RapidPace Vision', 'Les RapidPace Vision sont des lunettes de cyclisme légères et aérodynamiques conçues pour les cyclistes recherchant une performance maximale. Leur monture ajustable et leurs verres de haute qualité améliorent la visibilité sur la route.', 'cyc9.jpeg', '$19.99')">
+                <img src="cyc9.jpeg" alt="RapidPace Vision" width="200" height="150">
+                <h3>RapidPace Vision</h3>
+                <p>Prix : $19.99</p>
+            </div>
+            <div class="product2" onclick="showProductDetails('ski-glasses-1', 'FastTrack Optics', 'Les FastTrack Optics sont des lunettes de soleil conçues pour les personnes toujours en mouvement. Leur design sportif et leurs verres résistants aux rayures garantissent une vision nette, même lors de vos activités les plus dynamiques.', 'sol7.jpeg', '$15.99')">
+                <img src="sol7.jpeg" alt="FastTrack Optics" width="200" height="150">
+                <h3>FastTrack Optics</h3>
+                <p>Prix : $15.99</p>
+            </div>
+            <div class="product2" onclick="showProductDetails('ski-glasses-2', 'Blizzard Blaze', 'Les Blizzard Blaze sont des lunettes de ski conçues pour les skieurs en quête de vitesse. Leur design aérodynamique offre une protection contre le vent et une vision claire, parfaites pour les descentes rapides.', 'ski9.jpeg', '$29.99')">
+                <img src="ski9.jpeg" alt="Blizzard Blaze" width="200" height="150">
+                <h3>Blizzard Blaze</h3>
+                <p>Prix : $29.99</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <h1 style="font-size: 36px; text-align: left;"><strong>Une paire de lunette de vitesse pour toi !</strong></h1>
+    <main>
+        <section id="about-us">
+            <h1>Le phénomène des lunettes de vitesse prend de l'ampleur ! Logique, tout le monde a envie d'aller vite !</h1><br>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Avec vos lunettes sur le visage, elles deviendront votre meilleur compagnon. De jour, de nuit, en pleine activité sportive ou en descente de ski. Profitez de son confort avec un grand champ de vision</p> 
+
+                    <h2>Pourquoi craquer pour les lunettes de vitesse ?</h2><br>
+                    <p>Depuis quelques mois, la mode est en train de prendre de la vitesse. Un accessoire iconique a fait son apparition, les lunettes de vitesse. Ces lunettes au style entre mi étranges et mi stylées pour être la personne la plus tendance de la soirée. Leur forme aérodynamique, les verres polarisées, leur légèreté, leur vision optimale et les différentes teintes font de cet accessoire le must-have à avoir.</p><br>
+                    <p>C'est le match parfait entre le style et le sport, ce qui créé un style sportwear en apportant un style plus décontracté. Pour homme ou femme, tous les modèles sont unisexes pour les utiliser dans n'importe quel sport, comme en ski ou en vélo.</p>
+                    <h3>Tu as une question ou tu veux laisser ton avis à propos de notre site ? </h3><br>
+                    <p>N'hésitez pas à laisser vos commentaires dans l'encadrer ci-dessous. Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont indiqués avec *</p>
+                    <form id="review-form">
+                        <textarea id="review-text" placeholder="Commentaire ou avis *" required></textarea>
+                        <input type="text" id="reviewer-name" placeholder="Nom *" required>
+                        <input type="email" id="reviewer-email" placeholder="E-mail *" required>
+                        <button type="submit">SOUMETTRE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="about-im3">
+            <div class="about-image3">
+                <img src="Accueil.png" alt="Image description">
+            </div>
+        </section>  
+    </main>
+
+
+    <script>
+        var hideTimeout;
+
+        function showDropdown() {
+            clearTimeout(hideTimeout);
+            document.getElementById("products-dropdown").style.display = "block";
+        }
+
+        function hideDropdown() {
+            hideTimeout = setTimeout(function() {
+                document.getElementById("products-dropdown").style.display = "none";
+            }, 200); // Changer la valeur de délai selon vos préférences (en millisecondes)
+        }
+
+        function cancelHide() {
+            clearTimeout(hideTimeout);
+        }
+    </script>
+
+    <script>
+        // Fonction pour afficher les détails d'un produit
+        function showProductDetails(productId, productName, productDescription, productImage, productPrice) {
+            // Vous pouvez rediriger vers une nouvelle page pour afficher les détails du produit
+            window.location.href = "product-details.html?productId=" + productId +
+                                "&productName=" + encodeURIComponent(productName) +
+                                "&productDescription=" + encodeURIComponent(productDescription) +
+                                "&productImage=" + encodeURIComponent(productImage) +
+                                "&productPrice=" + encodeURIComponent(productPrice);
+        }
+    </script>
+
+
+    <footer>
+        <p>&copy; 2023 Lunettes de vitesse. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

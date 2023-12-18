@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" media="all" rel="stylesheet">
+    <title>Détails du Produit - Sunglasses Shop</title>
+</head>
+
+
+<body>
+
+    <header3>
+        <div class="principale">
+            <div class="logo">
+                <img src="LunettesLogo.png" alt=" Sunglasses shop " width="100" heighet="100">
+            <div class="nomlogo">
+                <h2>Sunglasses Shop</h2>
+            </div>                
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                </li>
+                <li class="products-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                    <a href="#">Produits</a>
+                    <ul class="dropdown-list" id="products-dropdown">
+                        <li><a href="ski-glasses.html">Lunettes de ski</a></li>
+                        <li><a href="cycling-glasses.html">Lunettes de cyclisme</a></li>
+                        <li><a href="sun-glasses.html">Lunettes de soleil</a></li>
+                    </ul>
+                </li>               
+                <li>
+                    <a href="panier.html">Panier</a>
+                </li>
+                <li>
+                    <a href="about.html">À propos de nous</a>                
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </header3>
+
+    <div class="product-details-section">
+        <div id="product-details">
+            <img id="product-image" src="" alt="">
+            <div class="product-info">
+                <h3 id="product-name"></h3>
+                <p id="product-description"></p>
+                <p id="product-price"></p>
+                <p>Disponibilité : En stock</p>
+                <input type="number" id="product-quantity" value="1" min="1" max="99" step="1">
+                <button id="add-to-cart-btn">AJOUTER AU PANIER</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Section Avis -->
+    <div class="product-reviews-section">
+        <h3>Avis</h3>
+        <p><strong>N'hésitez pas à laisser votre avis sur ce produit. Votre adresse e-mail ne sera pas publiée. Les champs obligatoires sont indiqués avec *</strong></p>
+        <form id="review-form">
+            <textarea id="review-text" placeholder="Votre avis *" required></textarea>
+            <input type="text" id="reviewer-name" placeholder="Nom *" required>
+            <input type="email" id="reviewer-email" placeholder="E-mail *" required>
+            <button type="submit">SOUMETTRE</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Fonction pour extraire les paramètres de l'URL et les fonctions existantes
+        
+        // Ajoutez ici la fonctionnalité de soumission des avis
+        document.getElementById('review-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Implémentez la logique pour soumettre l'avis
+            alert('Votre avis a été soumis.');
+        });
+    </script>
+    <script>
+        // Ajoutez ici la fonctionnalité d'ajout au panier
+        document.getElementById('add-to-cart-btn').addEventListener('click', function() {
+            const quantity = parseInt(document.getElementById('product-quantity').value);
+            const product = {
+                id: productId, // productId should be defined in your existing script
+                name: productName,
+                price: parseFloat(productPrice.replace('Prix : ', '')), // Convert the price to a number
+                quantity: quantity // Quantity selected by the user
+                // Add other product details as needed
+            };
+            alert('Le produit a été ajouté au panier.');
+            addToCart(product); // Make sure this function is defined in your scripts.js
+        });
+    </script>
+
+    <script>
+        // Fonction pour extraire les paramètres de l'URL
+        function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Récupérer les paramètres passés dans l'URL
+        const productId = getURLParameter("productId");
+        const productName = decodeURIComponent(getURLParameter("productName"));
+        const productDescription = decodeURIComponent(getURLParameter("productDescription"));
+        const productImage = decodeURIComponent(getURLParameter("productImage"));
+        const productPrice = decodeURIComponent(getURLParameter("productPrice"));
+
+        // Afficher les détails du produit sur la page
+        document.getElementById("product-image").src = productImage; // Affiche l'image
+        document.getElementById("product-name").textContent = productName;
+        document.getElementById("product-description").textContent = productDescription;
+        document.getElementById("product-price").textContent = "Prix : " + productPrice;
+
+    </script>
+</body>
+</html>
